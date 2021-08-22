@@ -1,0 +1,21 @@
+{% extends 'layout/main.twig' %}
+
+{% block body %}
+  <div class="container">
+    <aside class="nah_store__aside">
+      <div class="nah_store__aside__image_container">
+        <img src="../assets/img/nah_store_logo.png" class="nah_store__aside__image" alt="Logo Nah Store">
+      </div>
+      <div class="nah_store__aside__title">Nah Store</div>
+    </aside>
+
+    <main class="login_area">
+      <form action="/panel" method="get" class="login_area__form">
+        <span class="login_area__form__title">Faça seu login</span>
+        <input type="text" class="login_area__form__input" id="username" placeholder="Usuário">
+        <input type="password" class="login_area__form__input" id="password" placeholder="*****">
+        <button type="submit" class="login_area__form__button" id="login">Entrar</button>
+      </form>
+    </main>
+  </div>
+{% endblock %}

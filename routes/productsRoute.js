@@ -23,7 +23,7 @@ router.get('/panel', async (req, res) => {
 })
 
 router.get('/panel/products', async (req, res) => {
-  axios.get('http://localhost:3333/products')
+  axios.get('http://localhost:3334/products')
   .then(async response => {
     const products = response.data
     res.end(await twing.render('pages/manage_products.twig', { products, pageType: 'manage_products' }))

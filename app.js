@@ -9,6 +9,6 @@ app.set("views", path.join(__dirname, "public"))
 
 routes(app)
 
-app.listen(3334, () => console.log("server is running on port 3333"))
+app.listen(3333, () => console.log("server is running on port 3333"))
 
 module.exports = app
